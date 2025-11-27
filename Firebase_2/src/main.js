@@ -13,7 +13,9 @@ let urlParams = new URLSearchParams(window.location.search);
 let screen = urlParams.get("screen");
 
 if (screen == "A") {
-  document.body.innerHTML += `<button id="sequence_start">Start Sequence</button>`;
+  document.getElementById(
+    "ui-overlay"
+  ).innerHTML += `<button id="sequence_start">Start Sequence</button>`;
 }
 
 let playing_index = 0;

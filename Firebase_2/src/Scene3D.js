@@ -1,4 +1,4 @@
-import * as THREE from 'three';
+import * as THREE from "three";
 
 /**
  * Classe principale pour gérer la scène 3D
@@ -10,7 +10,7 @@ export class Scene3D {
     this.camera = null;
     this.renderer = null;
     this.clock = new THREE.Clock();
-    
+
     this.init();
   }
 
@@ -40,7 +40,7 @@ export class Scene3D {
     this.addLights();
 
     // Gérer le redimensionnement
-    window.addEventListener('resize', () => this.onWindowResize());
+    window.addEventListener("resize", () => this.onWindowResize());
   }
 
   addLights() {
